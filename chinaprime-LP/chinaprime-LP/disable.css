@@ -1,0 +1,218 @@
+/*------------------------------------------------------------
+.notes_required
+------------------------------------------------------------*/
+
+.notes_required {
+    text-align: center;
+    background: #fff;
+    border: 2px solid #ffb97c;
+    padding: 30px 20px;
+  }
+  .notes_required .check_text_b {
+    font-size: 16px;
+  }
+  .notes_required .checkBtn_area {
+    max-width: 400px;
+    margin: 15px auto 10px;
+    border-radius: 12px;
+    background: #ffd6b3;
+    padding: 20px 0;
+    transition-duration: 0.2s;
+  }
+  .notes_required._check .checkBtn_area {
+    background: #ffb97c;
+  }
+  .notes_required label {
+    color: #333;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    position: relative;
+  }
+  .notes_required label .label_inner {
+    padding-left: 22px;
+  }
+  .notes_required label .label_inner:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border: 4px solid #737373;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -13px;
+  }
+  .notes_required._check label .label_inner:after {
+    content: '';
+    width: 20px;
+    height: 12px;
+    border-top: 6px solid #d6042e;
+    border-right: 6px solid #d6042e;
+    -webkit-transform: rotate(130deg);
+    transform: rotate(130deg);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -.9em;
+  }
+  .notes_required label input {
+    position: relative;
+    z-index: -1;
+  }
+  @media screen and (min-width: 768px) {
+    .notes_required label:hover {
+      border-bottom: 2px solid #ff7600;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .notes_required label {
+      font-size: 18px;
+    }
+    .notes_required .check_text_b {
+      font-size: 14px;
+    }
+    .notes_required label .label_inner {
+      padding-left: 10px;
+    }
+    .notes_required label .label_inner:before {
+      width: 20px;
+      height: 20px;
+      margin-top: -10px;
+    }
+    .notes_required._check label .label_inner:after {
+      width: 16px;
+      height: 8px;
+      margin-top: -0.8em;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .notes_required {
+      padding: 20px 15px;
+    }
+    .notes_required .check_text_b {
+      font-size: 13px;
+    }
+    .notes_required._check label .label_inner:after {
+      width: 16px;
+      height: 8px;
+      margin-top: -0.8em;
+    }
+  }
+  
+  /*------------------------------------------------------------
+  .btnArea
+  ------------------------------------------------------------*/
+  
+  .btnArea {
+    max-width: 400px;
+    margin: 30px auto 0;
+    position: relative;
+  }
+  .btnArea input[type="submit"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0);
+    padding: 0;
+    z-index: -1;
+    transition-duration: 0.3s;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+  }
+  .btnArea input[type="submit"] {
+    cursor: default;
+    z-index: +1;
+    outline: none;
+  }
+  .btnArea._check input[type="submit"] {
+    z-index: -1;
+  }
+  a.btn_one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #969696;
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px 0px #00407b;
+    width: 100%;
+    height: 80px;
+    padding: 0 10% 0 6%;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    position: relative;
+    transition-duration: 0.2s;
+  }
+  a.btn_one:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 12px;
+    border-color: transparent transparent transparent #ffffff;
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    margin-top: -11px;
+  }
+  ._check a.btn_one._a {
+    background: #3475b1;
+    box-shadow: 0px 5px 0px 0px #104575;
+  }
+  a.btn_one._a:hover {
+    background: #228bc8;
+    opacity: 1;
+  }
+  ._check a.btn_one._b {
+    background: #459d3c;
+    box-shadow: 0px 5px 0px 0px #255720;
+  }
+  a.btn_one._b:hover {
+    background: #63b559;
+    opacity: 1;
+  }
+  @media screen and (max-width: 1024px) {
+    a.btn_one {
+      height: 60px;
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    a.btn_one {
+      font-size: 16px;
+    }
+  }
+  
+  /*====================================================================
+  以下は不要です。
+  ====================================================================*/
+  body {
+    font-family: YuGothic, "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 16px;
+    letter-spacing: .025em;
+    line-height: 1.8;
+    margin: 0;
+  }
+  section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 10px;
+  }
+  @media screen and (max-width: 1024px) {
+    body {
+      font-size: 14px;
+    }
+  }
